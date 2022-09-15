@@ -1,0 +1,648 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'PT Sans', sans-serif;   
+}
+
+.logo-icon{
+    height: 2rem;
+    width: 2rem;
+    fill: white;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .logo{
+    display: flex;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    align-items: center;
+    width: 15rem;
+}
+
+.logo svg{
+
+}
+
+.logo p{
+    color: white;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+header{
+    height: 30vh;
+    position: relative;
+}
+
+.header{    
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url(images/header.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.nav-right{
+    display: flex;
+    /* gap: 2rem; */
+    margin-right: 2rem;
+    margin-top: 2rem;
+    width: 20rem;
+}
+
+.nav-right img{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 7px;
+}
+
+.nav-right a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.812);
+    background-color: rgba(68, 68, 68, 0.727);
+    padding: 1rem 1.5rem;   
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+.notification-icon{
+    height: 3rem;
+    width: 3rem;
+    color:  rgba(255, 255, 255, 0.643);
+    padding: 0.2rem;
+    
+}
+
+
+.profile-photo img{
+    height: 18rem;
+    width: 20rem;
+    top: 10rem;
+    left: 3% ;
+    position: absolute;
+    border-radius: 15px;
+}
+
+.header-text{
+    margin:3rem 0 0 31rem;
+    letter-spacing: 2.5px;
+    line-height: 1.5rem;
+}
+
+.header-text h1{
+    color: white;
+}
+
+.header-texts{
+    display: flex;
+    flex-direction: column;
+    color: rgba(255, 255, 255, 0.904);
+}
+
+.header-texts span{
+    color: rgba(255, 255, 255, 0.663);    
+}
+
+.header-text-item{
+    margin-top: 0.5rem;
+}
+
+.profile-completion{
+    display: flex;
+    gap: 2rem;
+    margin-left: 110rem;
+    margin-top: -12rem;
+    fill: none; 
+    height: 10rem;
+    padding: 1rem;
+    width: 30rem;
+    background-color: rgba(255, 255, 255, 0.337);
+}
+
+.nav-right svg{
+    flex: 0 0 40%;
+}
+
+.profile-completion svg circle{
+    stroke-width: 0.5rem;
+    stroke: orange;
+    stroke-dasharray: 175;
+    transform: rotate(0deg);
+    transform-origin: center;
+}
+
+.profile-completion-text{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    flex: 1 0 60%;
+    position: relative;
+}
+
+
+.profile-completion-percentage{
+    position: absolute;
+    left: -9rem;
+    bottom: 18.5%;
+    font-size: 1.3rem;
+    /* background-color: rgba(255, 255, 255, 0.515); */
+    background-color: rgba(255, 255, 255, 0.337);
+    border-radius: 50px;
+    height: 5rem;
+    width: 5rem;
+    font-weight: 500;
+    padding: 1.5rem;
+}
+
+
+.profile-completion-text button{
+    background-color: orange;
+    color: white;
+    padding: 0.5rem;
+    width: 70%;
+    border: orange;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+
+.container{
+    display: flex;
+}
+
+.sidebar{
+    width: 20%; 
+    height: 90vh;
+    border-right: 1px solid #ddd;
+    padding-right: 2rem;
+    /* background-color: rebeccapurple; */
+}
+
+.about-my-family-section,
+.about-me-section{
+    margin-left: 5rem;
+}
+
+.sidebar-header-section svg{
+    height: 2rem;
+    width: 2rem;
+    color: #aaa;  
+}
+
+.sidebar-header-section-text{
+    display: flex;
+    justify-content: space-between;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.sidebar .horizontal-line{
+    height: 1px;
+    width: 22rem;
+    background-color: #ddd; 
+    margin: 0.5rem 0;    
+}
+
+.about-my-family-subsection p{
+    color: #aaa;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+
+.about-my-family-subsection{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-my-family-photos{
+    display: flex;
+    gap: 1rem;
+}
+
+.about-my-family-photos img{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50px;
+    margin: 1rem 0;
+}
+
+.about-me-section{
+    margin-top: 3rem;
+}
+
+.about-me-subsection{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me-subsection p{
+    color: #333;
+    text-transform: uppercase;
+}
+
+.about-me-subsection{
+    margin-top: 1rem;
+}
+
+.about-me-subsection span:first-child{
+    color: #aaa;
+    text-transform: uppercase;
+}
+
+.about-me-subsection span{
+    color: #333;
+    font-size: 1.3rem;
+}
+
+.margin-top-7rem{
+    height: 7rem;
+}
+
+.main-content{
+    width: 80%;
+}
+
+.main-content-nav{
+    display: flex;
+    height: 8%;
+    /* background-color: aqua; */
+    border-bottom: 2px solid #ddd;
+}
+
+.main-content-nav svg{
+    height: 2rem;
+    width: 2rem;
+    fill: black;
+}
+
+.main-content-nav ul{
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+
+.main-content-nav li{
+    display: inline-block;
+    height: 105%;
+    /* background-color: red;   */
+    width: 12rem;
+    padding: 1rem 0;
+}
+
+.main-content-nav li:nth-child(3){
+    width: 16rem;
+}
+
+.main-content-nav ul li a{
+    text-decoration: none;
+    color: #aaa;   
+    font-size: 1.5rem ; 
+    /* background-color: blue;    */
+    display: inline-block;
+    width: 100%;
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+    padding: 0 1.2rem;
+}
+
+.main-content-nav ul:first-child{
+    margin-left: 2rem;
+}
+
+.main-content-nav button{
+    margin-left: 5%;
+    height: 3rem;
+    width: 10rem;
+    background-color: rgb(13, 157, 104);
+    color: #ddd;
+    font-size: 1.5rem;
+    border-radius: 3px;
+    border: none;
+    align-self: center;
+}
+
+.button-content{
+    display: flex;
+    padding: 0 2rem;
+}
+
+.active{
+    border-bottom: 3px solid orange;
+    font-weight: 700;
+    color: black;
+}
+
+.active svg{
+    height: 3rem;
+    width: 4rem;
+    align-self: center;
+    flex: 1 0 20%;
+    display: block;
+}
+
+.active .active-nav a{
+    color: black;
+}
+
+.active-nav{
+    display: flex;
+}
+
+.card-container{
+    margin-top: 3rem;
+    /* background-color: red; */
+    display: flex;
+    gap: 3rem;
+    height: 15rem;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    /* box-shadow:  2px 1px 8px rgba(221, 221, 221, 0.178); */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 5px;
+
+}
+
+.card p{
+    flex: 0 0 20%;
+    font-size: 5rem;
+    color: #333;
+    padding: 2rem;
+}
+
+.card h1{
+    font-weight: 400;
+    color: #aaa;
+    margin: 0rem 0 1rem 0;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+.card-photos{
+    display: flex;
+    position: relative;
+}
+
+.card-photos img,
+.card-more-photos{
+    height: 3.5rem;
+    width : 3.5rem;
+    border-radius: 50px;
+    margin-left: -1.2rem;
+    color: white;
+    font-weight: 500;
+    font-size: 1.5rem;
+    border: 2px solid white;    
+}
+
+.card-photos img:first-child{
+    margin-left: 0px;
+}
+
+.card-vertical-line{
+    width: 2px;
+    height: 75%;
+    background-color: #ddd;
+}
+
+.card-container .card{
+    /* background-color: wheat; */
+    height: 75%;
+    width: 30%;
+    align-self: center;
+}
+
+.card-more-photos{
+    background-color: rgba(13, 157, 104, 0.471);
+    padding: 1rem;
+    border-radius: 50%;
+    border: none;
+    /* position: relative;   */
+}
+
+.profile-card-container{
+    /* background-color: aqua;   */
+    height: 60vh;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* align-items: flex-start; */
+    padding: 2rem 0 2rem 2rem;
+}
+
+.profile-card-container svg{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.profile-card{
+    /* background-color: coral; */
+    width: 100%;
+    height: 50%;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.profile-card img{
+    height: 100%;
+    width: 2rem;
+    flex: 0 0 20%;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.profile-detail-header{
+    color: #333;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.profile-card-detail-container{
+    display: flex;
+    margin-bottom: 0.6rem;
+}
+
+.profile-card-detail-container svg{
+    margin: 0.1rem  1rem 0 0;
+    color: #aaa;
+}
+
+.profile-card-detail-container p,
+.profile-detail-title{
+    font-size: 1.2rem;
+}
+
+.profile-detail-title{
+    color: #333;
+    font-size: 1.3rem;
+}
+
+.profile-card-detail-container p{
+    color: #999;
+    font-size: 1.3rem;
+}
+
+.profile-card button{
+    height: 3rem;
+    width: 10rem;   
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    margin: 8rem 0 0 24rem;
+}
+
+.profile-card-button{
+    display: flex;
+    padding: 0 2rem;
+    font-size: 2rem;
+    align-items: center;
+    gap: 1rem;
+    color: white;       
+}
+
+.profile-card-button svg{
+    height: 2rem;
+    width: 2rem;
+}
+
+.profile-card-button p{
+    margin-top: -5%;
+}
+
+.under-card-section{
+    display: flex;
+    gap: 3rem;
+}
+
+.activity-section{
+    /* background-color: aqua; */
+    height: 55vh;
+    width: 30%;
+    padding: 2rem;
+    overflow: scroll;
+    overflow-x: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin-top: 2rem;
+    border-radius: 5px;
+    
+}
+
+.activity-section-header{
+    /* background-color: red; */
+    height:5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.activity-section-header p{
+    color: #999;
+    text-transform: uppercase;
+}
+
+.horizontal-line{
+    height: 1px;
+    width: 100%;
+    background-color: #ddd;
+}
+
+.activity-section-main{
+    display: flex;
+}   
+
+.activity-section-decor{
+    flex: 0 0 10%;
+    /* background-color: blue; */
+    padding: 0 1rem;
+    margin-top: 0.4rem;
+}
+
+.activity-section-content{
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+
+.colored-dot{
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0px 0px 4px 4px rgba(255, 0, 0, 0.211);
+}
+
+.activity-decor-line{
+    width: 1px;
+    height: 165%;
+    background-color: #ddd;
+    margin-left: 0.4rem;
+}
+
+.activity-section-main{
+    /* background-color: orange;     */
+    height: 6rem;
+    margin-top: 4rem;
+}
+
+.activity-content-title{
+    color: #333;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.activity-content-text{
+    color: #555;
+    font-size: 1.6rem;
+}
+
+.activity-content-time{
+    color: #999;
+    font-size: 1.4rem;
+}
+
+.no-margin{
+    margin-top: 0;
+}
+
+.blue{
+    background-color: blue;
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 255, 0.133);
+}
+
+.orange{
+    background-color: orange;
+    box-shadow: 0px 0px 4px 4px rgba(255, 166, 0, 0.177);
+}
+
+.green{
+    background-color: green;
+    box-shadow: 0px 0px 4px 4px rgba(0, 128, 0, 0.181);
+}
+
+
