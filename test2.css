@@ -10,14 +10,14 @@ html{
 }
 
 body{
-    font-family: 'PT Sans', sans-serif;   
+    font-family: 'Inter', 'PT Sans', sans-serif;   
     max-width: 100%;
 }
 
 .logo-icon{
     height: 2rem;
     width: 2rem;
-    fill: white;
+    fill: #fafafa;
 }
 
 nav{
@@ -33,12 +33,16 @@ nav .logo{
     width: 15rem;
 }
 
+button{
+    cursor: pointer;
+}
+
 .logo svg{
 
 }
 
 .logo p{
-    color: white;
+    color: #fafafa;
     font-weight: 500;
     font-size: 1.2rem;
 }
@@ -56,8 +60,6 @@ header{
     background-size: cover;
 }
 
-
-
 .nav-right{
     display: flex;
     /* gap: 2rem; */
@@ -74,21 +76,19 @@ header{
 
 .nav-right a{
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.812);
-    background-color: rgba(68, 68, 68, 0.727);
+    color:  #fafafa85;
+    background-color: rgba(68, 68, 68, 0.462);
     padding: 1rem 1.5rem;   
     text-transform: uppercase;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .notification-icon{
     height: 3rem;
     width: 3rem;
-    color:  rgba(255, 255, 255, 0.643);
-    padding: 0.2rem;
-    
+    color:  #fafafa85;
+    padding: 0.2rem;   
 }
-
 
 .profile-photo img{
     height: 18rem;
@@ -101,8 +101,9 @@ header{
 
 .header-text{
     margin:3rem 0 0 31rem;
-    letter-spacing: 2.5px;
+    letter-spacing: 1.5px;
     line-height: 1.5rem;
+    font-size: 1.1rem;
 }
 
 .header-text h1{
@@ -112,15 +113,27 @@ header{
 .header-texts{
     display: flex;
     flex-direction: column;
-    color: rgba(255, 255, 255, 0.904);
+    color: #a6a7a9;
 }
 
 .header-texts span{
-    color: rgba(255, 255, 255, 0.663);    
+    color: #afafaf;    
+}
+
+.alert-dot{
+    height: 0.8rem;
+    width: 0.8rem;
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: #EE913A;
+    margin-left: 12.5rem;
+    margin-top: 0.3rem;
 }
 
 .header-text-item{
     margin-top: 0.5rem;
+    color: white;
 }
 
 .profile-completion{
@@ -129,9 +142,9 @@ header{
     margin-left: 110rem;
     margin-top: -12rem;
     fill: none; 
-    height: 10rem;
+    height: 12rem;
     padding: 1rem;
-    width: 30rem;
+    width: 28rem;
     background-color: rgba(255, 255, 255, 0.337);
 }
 
@@ -141,7 +154,7 @@ header{
 
 .profile-completion svg circle{
     stroke-width: 0.5rem;
-    stroke: orange;
+    stroke: #EE913A;
     stroke-dasharray: 175;
     transform: rotate(0deg);
     transform-origin: center;
@@ -155,11 +168,10 @@ header{
     position: relative;
 }
 
-
 .profile-completion-percentage{
     position: absolute;
-    left: -9rem;
-    bottom: 18.5%;
+    left: -8.8rem;
+    bottom: 24%;
     font-size: 1.3rem;
     /* background-color: rgba(255, 255, 255, 0.515); */
     background-color: rgba(255, 255, 255, 0.337);
@@ -172,13 +184,13 @@ header{
 
 
 .profile-completion-text button{
-    background-color: orange;
+    background-color: #EE913A;
     color: white;
     padding: 0.5rem;
     width: 70%;
-    border: orange;
+    border: #EE913A;
     border-radius: 5px;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
 }
 
 .container{
@@ -303,8 +315,14 @@ header{
     display: inline-block;
     height: 105%;
     /* background-color: red;   */
-    width: 12rem;
+    width: 13rem;
     padding: 1rem 0;
+    text-align: left;
+}
+
+.main-content-nav li:hover{
+    border-bottom: 3px solid #EE913A;
+    
 }
 
 .main-content-nav li:nth-child(3){
@@ -317,10 +335,11 @@ header{
     font-size: 1.5rem ; 
     /* background-color: blue;    */
     display: inline-block;
-    width: 100%;
+    width: 120%;
     margin-top: 0.5rem;
     text-transform: uppercase;
     padding: 0 1.2rem;
+    text-align: center;
 }
 
 .main-content-nav ul:first-child{
@@ -328,15 +347,17 @@ header{
 }
 
 .main-content-nav button{
-    margin-left: 5%;
+    margin-left: 70%;
     height: 3rem;
     width: 10rem;
-    background-color: rgb(13, 157, 104);
+    background-color: #459A81;
     color: #ddd;
     font-size: 1.5rem;
     border-radius: 3px;
     border: none;
     align-self: center;
+    position: absolute;
+
 }
 
 .button-content{
@@ -345,7 +366,7 @@ header{
 }
 
 .active{
-    border-bottom: 3px solid orange;
+    border-bottom: 3px solid #EE913A;
     font-weight: 700;
     color: black;
 }
@@ -421,6 +442,10 @@ header{
     margin-left: 0px;
 }
 
+.card-photos img:nth-child(4){
+    border: none;
+}
+
 .card-vertical-line{
     width: 2px;
     height: 75%;
@@ -435,10 +460,15 @@ header{
 }
 
 .card-more-photos{
-    background-color: rgba(13, 157, 104, 0.471);
-    padding: 1rem;
+    background-color: #2cf0b57a;
+    padding: 1rem 0rem;
     border-radius: 50%;
     border: none;
+    position: absolute;
+    left: 8.1rem;
+    color: rgba(255, 255, 255, 0.852);
+    font-size: 1.2rem;
+    text-align: center;
     /* position: relative;   */
 }
 
@@ -497,6 +527,10 @@ header{
     font-size: 1.2rem;
 }
 
+.profile-card-details{
+    flex: 1 0 40%;
+}
+
 .profile-detail-title{
     color: #333;
     font-size: 1.3rem;
@@ -510,10 +544,10 @@ header{
 .profile-card button{
     height: 3rem;
     width: 10rem;   
-    background-color: orange;
+    background-color: #EE913A;
     border: none;
     border-radius: 5px;
-    margin: 8rem 0 0 24rem;
+    margin: 8rem 1rem 0 0;
 }
 
 .profile-card-button{
@@ -544,12 +578,10 @@ header{
     height: 55vh;
     width: 30%;
     padding: 2rem;
-    overflow: scroll;
-    overflow-x: hidden;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     margin-top: 2rem;
-    border-radius: 5px;
-    
+    border-radius: 5px;   
+    overflow: hidden;
 }
 
 .activity-section-header{
@@ -575,6 +607,21 @@ header{
 .activity-section-main{
     display: flex;
 }   
+
+.activity-setion-main-container{
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+.activity-setion-main-container::-webkit-scrollbar{
+    width: 0.5rem;
+}
+
+.activity-setion-main-container::-webkit-scrollbar-thumb{
+    background-color: #EE913A;
+    border-radius: 5px;
+}
 
 .activity-section-decor{
     flex: 0 0 10%;
@@ -637,12 +684,12 @@ header{
 }
 
 .orange{
-    background-color: orange;
+    background-color: #EE913A;
     box-shadow: 0px 0px 4px 4px rgba(255, 166, 0, 0.177);
 }
 
 .green{
-    background-color: green;
+    background-color: #459A81;
     box-shadow: 0px 0px 4px 4px rgba(0, 128, 0, 0.181);
 }
 
